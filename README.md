@@ -34,7 +34,7 @@ Anduril Blog is a state-of-the-art blogging platform designed for modern web dev
 
 ### 2. Installation
 ```bash
-git clone https://github.com/yourusername/anduril-blog.git
+git clone https://github.com/andurila19-lgtm/Artikel.git
 cd anduril-blog
 npm install
 ```
