@@ -1,0 +1,66 @@
+---
+title: "Building a Modern and Scalable Backend Using AWS"
+description: "Technical guide to backend architecture on Amazon Web Services (AWS) using serverless, EC2, and RDS cloud database services to support rapid application growth."
+date: "2024-03-29"
+author: "Anduril Senior Developer"
+category: "Cloud"
+---
+
+## Introduction
+
+The extraordinary success of a modern application in today's digital era is often measured by its ability to handle an unexpected surge in users in a very short time—something we know in the tech world as **Scalability**. Building a backend system that "merely works" for ten users is an easy task for anyone. However, building a backend that remains very fast and stable for one million users simultaneously across the world is the true art.
+
+As a global leader dominating cloud computing services, **Amazon Web Services (AWS)** provides a wide array of sophisticated "building blocks" of infrastructure that we can arrange to create a very resilient backend system. This article will discuss in depth how to build a *scalable* backend architecture using key services in the AWS ecosystem.
+
+## Why Choose AWS for Scalability Needs?
+
+There are so many cloud providers out there, but AWS remains the top favorite for millions of engineers because of its very large community, very complete technical documentation, and world-class (enterprise-grade) features that can be immediately used even by small startup teams.
+
+The main key to scalability success within AWS is our ability to perform **horizontal scaling** (adding more active servers) instead of vertical scaling (only adding memory capacity on a single server). This way, there is no **single point of failure** that could bring down your entire application.
+
+## Key Components in AWS Backend Architecture
+
+To be able to build a truly *scalable* backend, you must well understand the function and use of these few key services:
+
+### 1. Amazon EC2 (Elastic Compute Cloud)
+EC2 is the most flexible virtual server where you can install your choice of operating system (like Ubuntu, Amazon Linux, or CentOS) and run your Node.js, Python, or Go application there. For this system to be *scalable*, EC2 must be combined with **Auto Scaling Groups (ASG)**. This feature will automatically increase the number of servers on when CPU usage reaches a certain limit you specify.
+
+### 2. AWS Lambda (Serverless Technology)
+This is the future of backend development. With Lambda, you no longer need to think about physical server management or operating systems at all. The code you write will only run when there is a request (trigger), and you only need to pay based on the millisecond of its execution time. Lambda is perfectly suited for API functions that have very fluctuating or drastically up-down traffic (*spiky traffic*).
+
+### 3. Amazon RDS (Relational Database Service)
+Managing a SQL database (like PostgreSQL or MySQL) manually on your own server is a very tiring and high-risk task. RDS handles the entire installation, security patching, to daily automatic backup process for you. The **Read Replicas** feature in RDS allows you to duplicate the database to handle very high read loads (*read traffic*) from millions of users.
+
+### 4. Amazon S3 (Simple Storage Service)
+Get into the habit of storing all profile images, high-quality videos, or important documents belonging to users in the S3 service, not in your application server's hard drive. S3 is designed by Amazon with an availability level reaching 99.999999999%—which means your data is almost impossible to lose even if a major disaster occurs in the data center.
+
+## Building a Resilient Backend Architecture: Best Practices
+
+Let's try designing a truly ideal backend architecture in an AWS environment:
+
+### 1. Use Elastic Load Balancer (ELB) as the Front Door
+Never let your website visitors directly access the public IP address of your EC2 server. Use **Elastic Load Balancing (ELB)**, which acts as a smart traffic policeman who will divide incoming traffic to many servers evenly. If one of your servers has a problem or dies suddenly, the Load Balancer will automatically direct that traffic to another healthy server without being noticed by the user.
+
+### 2. Separate Static Files (Decoupling Principle)
+Store all static assets (like images, CSS, and JavaScript) in the **S3** service and distribute them through **Amazon CloudFront** (CDN service). This will significantly reduce the CPU workload on your main API server because the server no longer needs to serve millions of image file requests every second.
+
+### 3. Implement Aggressive Caching with Amazon ElastiCache (Redis)
+Frequently accessed databases will usually be the **bottleneck** point of a large application's speed. Use **Amazon ElastiCache** to store very frequently accessed data in memory (RAM). For example, you can store "User Profile" or "Trending List" data which rarely changes but is very often opened by users, so your website will feel much more responsive.
+
+## Case Study: E-Commerce Startup Facing Harbolnas
+
+Imagine a local e-commerce startup facing a major challenge during the annual shopping event (Harbolnas). Their visiting traffic is estimated to surge up to 50 times that of a normal day in just one day.
+
+Using the AWS ecosystem, they prepare a defense architecture as follows:
+- **API Gateway & AWS Lambda**: Used specifically to process the payment process. This is very secure because Lambda is isolated and only turns on when there is a transaction.
+- **Auto Scaling EC2 Groups**: Coated specifically to manage high-performance and consistent shopping cart features.
+- **RDS with Multi-AZ Configuration**: So that if a power outage occurs in one data center (Availability Zone), the database will automatically move to a backup data center (failover) in seconds without damaging transaction data.
+- **Amazon SQS (Simple Queue Service)**: To queue the order confirmation email process so as not to overload the main busy transaction process.
+
+The final result? Although millions of people were shopping at the same time, their portal shopping website kept running smoothly without any single buyer experiencing system failure or significant lag.
+
+## Conclusion
+
+AWS services provide an incredibly large military strength for a Backend Developer to be able to build world-class digital infrastructure with a cost that remains affordable. Building a truly *scalable* system is not just about choosing the most expensive server type, but about how your intelligence in designing relationships between various cloud services so that they support each other and have automated backup systems.
+
+Keep learning, experimenting, and don't be afraid to try various advanced services in AWS. Skills in designing cloud architecture are one of the biggest competitive advantages (*unique selling point*) for a professional software engineer in the middle of a digital era that is fast-paced and full of dynamics.

@@ -1,0 +1,35 @@
+{
+    "Home": {
+        "title": "Anduril Blog - Tutorial & Insight Web Development Modern",
+        "description": "Pelajari Next.js, React, dan teknologi web terbaru melalui panduan mendalam.",
+        "heroTitle": "Eksplorasi Dunia Web Development",
+        "heroSubtitle": "Artikel berkualitas untuk meningkatkan skill coding Anda, dari konsep dasar hingga teknik lanjutan.",
+        "latestArticles": "Artikel Terbaru",
+        "ctaText": "Mulai Membaca",
+        "newsletterTitle": "Tetap Terhubung",
+        "newsletterDesc": "Dapatkan notifikasi setiap kali ada tutorial baru baru dirilis.",
+        "subscribe": "Berlangganan",
+        "viewAll": "Lihat Semua",
+        "articles": "Daftar Tutorial"
+    },
+    "Navigation": {
+        "home": "Beranda",
+        "articles": "Tutorial",
+        "about": "Tentang",
+        "contact": "Kontak"
+    },
+    "Articles": {
+        "tableOfContents": "Daftar Isi",
+        "writtenBy": "Penulis:",
+        "readTime": "Waktu baca",
+        "relatedArticles": "Baca Juga"
+    },
+    "Footer": {
+        "description": "Berbagi pengetahuan untuk membangun masa depan digital yang lebih baik.",
+        "links": "Navigasi",
+        "legal": "Hukum",
+        "privacy": "Kebijakan Privasi",
+        "terms": "Syarat & Ketentuan",
+        "disclaimer": "Sanggahan"
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "Home": {
+        "title": "Anduril Blog - Modern Web Development Tutorials",
+        "description": "Learn Next.js, React, and latest web technologies through in-depth guides.",
+        "heroTitle": "Explore Modern Web Tech",
+        "heroSubtitle": "High-quality articles to sharpen your coding skills, from core concepts to advanced techniques.",
+        "latestArticles": "Latest Tutorials",
+        "ctaText": "Start Reading",
+        "newsletterTitle": "Stay Updated",
+        "newsletterDesc": "Get notified every time a new tutorial is released.",
+        "subscribe": "Subscribe",
+        "viewAll": "View All",
+        "articles": "All Tutorials"
+    },
+    "Navigation": {
+        "home": "Home",
+        "articles": "Tutorials",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "Articles": {
+        "tableOfContents": "Table of Contents",
+        "writtenBy": "Author:",
+        "readTime": "Read time",
+        "relatedArticles": "Recommended Reads"
+    },
+    "Footer": {
+        "description": "Sharing knowledge to build a better digital future together.",
+        "links": "Navigation",
+        "legal": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms & Conditions",
+        "disclaimer": "Disclaimer"
+    }
+}

@@ -1,0 +1,42 @@
+﻿
+> artikel@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.3s
+  Running TypeScript ...
+  Collecting page data using 11 workers ...
+node.exe : TypeError: The "path" arg
+ument must be of type string. Receiv
+ed undefined
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.ex
+e" "C:\Program Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSp 
+   ecified: (TypeError: The ...eiv  
+  ed undefined:String) [], Remote   
+ Exception
+    + FullyQualifiedErrorId : Nativ 
+   eCommandError
+ 
+    at f (D:\Artikel\artikel\.next\s
+erver\chunks\ssr\_2dc5e058._.js:1:18
+5542)
+    at Object.v [as generateStaticPa
+rams] (D:\Artikel\artikel\.next\serv
+er\chunks\ssr\[root-of-the-server]__
+a0c3f0bc._.js:1:212777) {
+  code: 'ERR_INVALID_ARG_TYPE'
+}
+
+> Build error occurred
+Error: Failed to collect page data f
+or /[locale]/articles/[slug]
+    at ignore-listed frames {
+  type: 'Error'
+}

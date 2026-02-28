@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗡️ Anduril Blog - Premium Web Development Insights
 
-## Getting Started
+Anduril Blog is a state-of-the-art blogging platform designed for modern web developers. Built with **Next.js 16**, **React 19**, and **Tailwind CSS v4**, it offers a premium, futuristic experience with a focus on speed, accessibility, and high-quality educational content.
 
-First, run the development server:
+---
 
+## ✨ Key Features
+
+- 🌍 **Multilingual Support**: Fully localized in Indonesian (ID) and English (EN) using `next-intl`.
+- 🗄️ **Supabase Integration**: Uses Supabase for dynamic article metadata retrieval and Storage for professional article covers.
+- 📝 **MDX-Powered**: seamless local article management using MDX with `gray-matter` for a rich writing experience.
+- 🎨 **Premium Aesthetics**: Dark mode by default, featuring vibrant glassmorphism effects, smooth Framer Motion transitions, and modern typography.
+- 📧 **Direct Communication**: Advanced contact form integrated with **Nodemailer** (via Gmail SMTP) for direct user inquiries.
+- 🚀 **Performance Optimized**: Built for high-speed delivery with Next.js 16's Turbopack and Server Components.
+- 🔍 **SEO Ready**: Automatically generated sitemaps and meta-data optimization for search engines.
+
+---
+
+## 🛠️ Technology Stack
+
+| Core | Database & Storage | Frontend |
+| :--- | :--- | :--- |
+| **Framework**: Next.js 16 (App Router) | **Backend**: Supabase | **Styling**: Tailwind CSS v4 |
+| **Runtime**: Node.js & React 19 | **Storage**: Supabase Buckets | **Animations**: Framer Motion |
+| **Logic**: TypeScript | **Cloud**: Vercel | **Icons**: Lucide React |
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+- Node.js (Latest LTS)
+- NPM, PNPM, or Bun
+
+### 2. Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/anduril-blog.git
+cd anduril-blog
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Environment Setup
+Create a `.env.local` file in the root directory and add your credentials:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+# Supabase
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Nodemailer (Gmail)
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_gmail_app_password
+```
 
-## Learn More
+### 4. Run Locally
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to explore the blog.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📂 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+├── content/              # MDX source files (ID & EN)
+├── messages/             # i18n translation files
+├── src/
+│   ├── app/              # Next.js App Router (Locale & Admin)
+│   ├── components/       # Reusable UI components
+│   ├── lib/              # Content & Supabase logic
+│   └── i18n/             # Routing & Middleware config
+├── public/               # Static assets & article images
+└── package.json          # Dependencies & Scripts
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🗺️ Roadmap
+- [ ] Admin Dashboard for browser-based article uploading.
+- [ ] Comment system using Giscus or Supabase.
+- [ ] Newsletter subscription with Mailchimp/Resend integration.
+- [ ] Advanced search functionality using Algolia.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📄 License
+This project is for educational purposes. Feel free to fork and build your own vision.
+
+Built with 💻 by **Anduril Senior Developer**
