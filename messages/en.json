@@ -31,5 +31,12 @@
         "privacy": "Privacy Policy",
         "terms": "Terms & Conditions",
         "disclaimer": "Disclaimer"
+    },
+    "Services": {
+        "title": "Our Services",
+        "companyProfile": "Company Profile",
+        "ecommerce": "E-Commerce",
+        "customApp": "Custom Application",
+        "contactCta": "Free Consultation"
     }
 }

@@ -1,0 +1,28 @@
+﻿
+> artikel@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+- Environments: .env.local
+
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.ex
+e" "C:\Program Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSp 
+   ecified: (:String) [], RemoteEx  
+  ception
+    + FullyQualifiedErrorId : Nativ 
+   eCommandError
+ 
+> Build error occurred
+Error: Both middleware file "./src\s
+rc\middleware.ts" and proxy file "./
+src\src\proxy.ts" are detected. Plea
+se use "./src\src\proxy.ts" only. Le
+arn more: https://nextjs.org/docs/me
+ssages/middleware-to-proxy
+    at ignore-listed frames

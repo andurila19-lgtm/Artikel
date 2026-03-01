@@ -31,5 +31,12 @@
         "privacy": "Kebijakan Privasi",
         "terms": "Syarat & Ketentuan",
         "disclaimer": "Sanggahan"
+    },
+    "Services": {
+        "title": "Layanan Kami",
+        "companyProfile": "Profil Perusahaan",
+        "ecommerce": "E-Commerce",
+        "customApp": "Aplikasi Kustom",
+        "contactCta": "Konsultasi Gratis"
     }
 }
