@@ -4,15 +4,10 @@ import { routing } from './i18n/routing';
 export default createMiddleware(routing);
 
 export const config = {
-    // Match only internationalized pathnames
-    matcher: [
-        // Enable a redirect to a matching locale at the root
-        '/',
-
-        // Set a cookie to remember the last locale for these paths
-        '/(id|en)/:path*',
-
-        // Do not localize internal Next.js paths and static files
-        '/((?!api|_next/static|_next/image|favicon.ico|apple-touch-icon.png|.*\\..*).*)'
-    ]
+    // Matcher that skips:
+    // - /api (API routes)
+    // - /_next (Next.js internals)
+    // - /_static (inside /public)
+    // - All root files inside /public (e.g. /favicon.ico)
+    matcher: ['/((?!api|_next|_static|_vercel|.*\\..*).*)']
 };
